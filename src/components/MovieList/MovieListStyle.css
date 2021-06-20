@@ -1,7 +1,3 @@
-.poster {
-  float: left;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.title {
+  text-align: center;
 }
