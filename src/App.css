@@ -7,3 +7,7 @@ body {
   overflow-x: auto;
   flex-wrap: nowrap;
 }
+
+.row2 {
+  float: right;
+}
