@@ -21,7 +21,7 @@ const App = () => {
 
 
   const getMovieRequest = async (searchValue, page) => {
-    const url = `http://www.omdbapi.com/?s=${searchValue}&page=${page}&type=movie&apikey=ddacb17c`
+    const url = `http://www.omdbapi.com/?s=${searchValue}&page=${page}&type=movie&apikey=ac3cc48a`
     const response = await fetch(url)
     const responseJson = await response.json();
 
@@ -41,12 +41,12 @@ const App = () => {
 
   return (
     <div className='container-fluid movie-app'>
-      <div className="row d-flex align-items-center mt-4 mb-4">
-        <MovieListHeading heading="movies" />
-        <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} setPage={setPage} />
+      <div className="heading">
+        <MovieListHeading class="heading" heading="Search for a Movie." />
+        <SearchBox ckass="heading" searchValue={searchValue} setSearchValue={setSearchValue} setPage={setPage} />
       </div>
       <div className="">
-        <MovieList movies={movies} />
+        <MovieList movies={movies} arrowsNeeded={arrowsNeeded} />
       </div>
       <div>
         <PageArrows arrowsNeeded={arrowsNeeded} getMovieRequest={getMovieRequest} searchValue={searchValue} page={page} setPage={setPage} />

@@ -1,5 +1,5 @@
 body {
-  background: #141414;
+  background: #2d2f74;
   color: #ffffff
 }
 
@@ -10,4 +10,9 @@ body {
 
 .row2 {
   float: right;
+}
+
+.heading{
+  align-items: center;
+  text-align: center;
 }
