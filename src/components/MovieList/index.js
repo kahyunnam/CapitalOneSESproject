@@ -1,5 +1,5 @@
 import React from 'react';
-import './MovieListStyle.css';
+import { Titles } from './MovieListElements.js';
 
 const MovieList = (props) => {
 
@@ -7,11 +7,11 @@ const MovieList = (props) => {
     <>
       {
         props.movies.map((movie, index) => (
-          <div className={index}>
+          <Titles>
             <h3> {movie.Title} </h3>
             <h1>{index}</h1>
             {/* <img src={movie.Poster} alt="Poster Not Found"></img> */}
-          </div>
+          </Titles>
         ))
       }
     </>
