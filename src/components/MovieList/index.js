@@ -4,8 +4,8 @@ import './MovieList.css';
 
 const MovieList = (props) => {
 
-  const [isOpen1, setIsOpen1] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+
 
   const toggle = () => {
     console.log(!isOpen)
@@ -20,14 +20,24 @@ const MovieList = (props) => {
   // console.log(Object.values(props.movies)[0].Title)
 
 
+  const getMovieInfo = async (id) => {
+    const url = `https://www.omdbapi.com/?i=${id}&type=movie&apikey=ac3cc48a`
+    const response = await fetch(url)
+    const responseJson = await response.json();
+    return (
+      <>
+      </>
+    )
+  }
+
 
   if (props.arrowsNeeded) {
     if (length == 10) {
       return (
         <div>
           <Titles>
-            <h3 class="TitleText" isOpen={isOpen1} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
-            <MovieInfo isOpen={isOpen1} >
+            <h3 class="TitleText" isOpen={isOpen} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
+            <MovieInfo isOpen={isOpen} >
               <MovieInfoWrapper onClick={toggle} >
                 <Poster>
                   <img class="Poster" src={Object.values(props.movies)[0].Poster} alt="Movie Poster Unavailable"></img>
@@ -173,8 +183,8 @@ const MovieList = (props) => {
       return (
         <div>
           <Titles>
-            <h3 class="TitleText" isOpen={isOpen1} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
-            <MovieInfo isOpen={isOpen1} >
+            <h3 class="TitleText" isOpen={isOpen} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
+            <MovieInfo isOpen={isOpen} >
               <MovieInfoWrapper onClick={toggle} >
                 <Poster>
                   <img class="Poster" src={Object.values(props.movies)[0].Poster} alt="Movie Poster Unavailable"></img>
@@ -305,8 +315,8 @@ const MovieList = (props) => {
       return (
         <div>
           <Titles>
-            <h3 class="TitleText" isOpen={isOpen1} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
-            <MovieInfo isOpen={isOpen1} >
+            <h3 class="TitleText" isOpen={isOpen} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
+            <MovieInfo isOpen={isOpen} >
               <MovieInfoWrapper onClick={toggle} >
                 <Poster>
                   <img class="Poster" src={Object.values(props.movies)[0].Poster} alt="Movie Poster Unavailable"></img>
@@ -423,8 +433,8 @@ const MovieList = (props) => {
       return (
         <div>
           <Titles>
-            <h3 class="TitleText" isOpen={isOpen1} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
-            <MovieInfo isOpen={isOpen1} >
+            <h3 class="TitleText" isOpen={isOpen} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
+            <MovieInfo isOpen={isOpen} >
               <MovieInfoWrapper onClick={toggle} >
                 <Poster>
                   <img class="Poster" src={Object.values(props.movies)[0].Poster} alt="Movie Poster Unavailable"></img>
@@ -527,8 +537,8 @@ const MovieList = (props) => {
       return (
         <div>
           <Titles>
-            <h3 class="TitleText" isOpen={isOpen1} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
-            <MovieInfo isOpen={isOpen1} >
+            <h3 class="TitleText" isOpen={isOpen} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
+            <MovieInfo isOpen={isOpen} >
               <MovieInfoWrapper onClick={toggle} >
                 <Poster>
                   <img class="Poster" src={Object.values(props.movies)[0].Poster} alt="Movie Poster Unavailable"></img>
@@ -617,8 +627,8 @@ const MovieList = (props) => {
       return (
         <div>
           <Titles>
-            <h3 class="TitleText" isOpen={isOpen1} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
-            <MovieInfo isOpen={isOpen1} >
+            <h3 class="TitleText" isOpen={isOpen} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
+            <MovieInfo isOpen={isOpen} >
               <MovieInfoWrapper onClick={toggle} >
                 <Poster>
                   <img class="Poster" src={Object.values(props.movies)[0].Poster} alt="Movie Poster Unavailable"></img>
@@ -693,8 +703,8 @@ const MovieList = (props) => {
       return (
         <div>
           <Titles>
-            <h3 class="TitleText" isOpen={isOpen1} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
-            <MovieInfo isOpen={isOpen1} >
+            <h3 class="TitleText" isOpen={isOpen} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
+            <MovieInfo isOpen={isOpen} >
               <MovieInfoWrapper onClick={toggle} >
                 <Poster>
                   <img class="Poster" src={Object.values(props.movies)[0].Poster} alt="Movie Poster Unavailable"></img>
@@ -755,8 +765,8 @@ const MovieList = (props) => {
       return (
         <div>
           <Titles>
-            <h3 class="TitleText" isOpen={isOpen1} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
-            <MovieInfo isOpen={isOpen1} >
+            <h3 class="TitleText" isOpen={isOpen} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
+            <MovieInfo isOpen={isOpen} >
               <MovieInfoWrapper onClick={toggle} >
                 <Poster>
                   <img class="Poster" src={Object.values(props.movies)[0].Poster} alt="Movie Poster Unavailable"></img>
@@ -803,8 +813,8 @@ const MovieList = (props) => {
       return (
         <div>
           <Titles>
-            <h3 class="TitleText" isOpen={isOpen1} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
-            <MovieInfo isOpen={isOpen1} >
+            <h3 class="TitleText" isOpen={isOpen} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
+            <MovieInfo isOpen={isOpen} >
               <MovieInfoWrapper onClick={toggle} >
                 <Poster>
                   <img class="Poster" src={Object.values(props.movies)[0].Poster} alt="Movie Poster Unavailable"></img>
@@ -837,8 +847,8 @@ const MovieList = (props) => {
       return (
         <div>
           <Titles>
-            <h3 class="TitleText" isOpen={isOpen1} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
-            <MovieInfo isOpen={isOpen1} >
+            <h3 class="TitleText" isOpen={isOpen} onClick={toggle} >{Object.values(props.movies)[0].Title}</h3>
+            <MovieInfo isOpen={isOpen} >
               <MovieInfoWrapper onClick={toggle} >
                 <Poster>
                   <img class="Poster" src={Object.values(props.movies)[0].Poster} alt="Movie Poster Unavailable"></img>
