@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import MovieList from './components/MovieList';
+import MovieList2 from './components/MovieList2';
 import MovieListHeading from './components/MovieListHeading';
 import SearchBox from './components/SearchBox';
 import PageArrows from './components/PageArrows';
@@ -46,7 +47,7 @@ const App = () => {
         <SearchBox ckass="heading" searchValue={searchValue} setSearchValue={setSearchValue} setPage={setPage} />
       </div>
       <div className="">
-        <MovieList movies={movies} arrowsNeeded={arrowsNeeded} />
+        <MovieList2 movies={movies} arrowsNeeded={arrowsNeeded} />
       </div>
       <div>
         <PageArrows arrowsNeeded={arrowsNeeded} getMovieRequest={getMovieRequest} searchValue={searchValue} page={page} setPage={setPage} />
