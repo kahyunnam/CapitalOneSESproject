@@ -4,7 +4,6 @@ export const Titles = styled.div`
   text-align: center;
   cursor: pointer;
   padding: 20px 20px 20px 20px;
-  tex
   
 `;
 
