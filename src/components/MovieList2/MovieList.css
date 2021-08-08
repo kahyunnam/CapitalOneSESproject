@@ -1,11 +1,45 @@
 .Poster {
-  position: absolute;
-  top: 30%;
-  left: 50%;
+  /* position: absolute; */
+  display: block;
+  top: 40%;
+  left: 25%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  width: 40%;
+  max-height: 70%;
+  max-width: auto;
+  /* max-height: 10%; */
 }
 
-.TitleText {
+.TitleText {  
   color:#9498b5;
+}
+
+span{
+  font-weight: bold;
+}
+
+.Plot{
+  background: rgba(255, 189, 224, 0.15);
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 23px;
+}
+
+.Rating{
+  padding-bottom: 30px;
+}
+
+.R, .Rating{
+  font-size: 20px;
+}
+
+.Genre{
+  padding-bottom: 20px;
+  font-size: 23px;
+  font-weight: lighter;
+  font-style: italic;
 }

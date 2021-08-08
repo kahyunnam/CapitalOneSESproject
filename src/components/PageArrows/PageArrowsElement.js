@@ -7,26 +7,26 @@ export const Arrows = styled.div`
 `;
 
 export const RightArrow = styled(FaArrowAltCircleRight)`
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.5); 
   font-size: 65px;
   cursor: pointer;
   padding: 10px 10px 10px 10px;
 
   &:hover{
-    color: #e3dd9f;    
+    color: rgba(255, 189, 224, 0.7);      
     transition: 0.2s ease-in-in-out;
     transform: scale(1.1);
   }
 `;
 
 export const LeftArrow = styled(FaArrowAltCircleLeft)`
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.5); 
   font-size: 65px;
   cursor: pointer;
   padding: 10px 10px 10px 10px;
 
   &:hover{
-    color: #e3dd9f;    
+    color: rgba(255, 189, 224, 0.5);  
     transition: 0.2s ease-in-in-out;
     transform: scale(1.1);
   }

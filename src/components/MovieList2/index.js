@@ -26,11 +26,11 @@ const MovieList2 = (props) => {
 
     return (
       <>
-        <h3>Genre: {movieInfo.Genre}</h3>
-        <h3>Released: {movieInfo.Released} </h3>
-        <h3>Runtime: {movieInfo.Runtime}</h3>
-        <h3>Rating: {movieInfo.imdbRating}/10</h3>
-        <h3>{movieInfo.Plot}</h3>
+        <h4 class="R"><span>Released : </span> {movieInfo.Released} </h4>
+        <h4 class="R"><span>Runtime :  </span> {movieInfo.Runtime}</h4>
+        <h4 class="Rating"><span>Rating : </span> {movieInfo.imdbRating} / 10</h4>
+        <h4 class="Genre"> {movieInfo.Genre}</h4>
+        <h4 class="Plot">{movieInfo.Plot}</h4>
       </>
     )
   }
@@ -54,7 +54,7 @@ const MovieList2 = (props) => {
               <img class="Poster" src={movie.Poster} alt="Movie Poster Unavailable"></img>
             </Poster>
             <Info>
-              <GetMovieInfo movie={movie.Title} />
+              <GetMovieInfo movie={movie.Title} class="movieInfo" />
             </Info>
           </MovieInfoWrapper>
         </MovieInfo>
